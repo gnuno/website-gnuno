@@ -14,6 +14,7 @@ export default defineComponent({
 </script>
 <style>
 footer {
+  display: inline-block;
   width: 100%;
   font-size: 10px;
   text-align: center;
