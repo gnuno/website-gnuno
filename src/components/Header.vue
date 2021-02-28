@@ -37,6 +37,7 @@ header {
   padding: 0;
 }
 .logo {
+  margin-left: 1%;
   display: inline-block;
   vertical-align: middle;
 }
