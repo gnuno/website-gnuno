@@ -2,7 +2,18 @@
   <div class="navbar">
     <div class="headerboxes">{{ titulo }}</div>
     <ul>
-      <li v-for="link in links" v-bind:key="link">{{ link }}</li>
+      <li class="no-links" v-for="link in links" v-bind:key="link">
+        <a
+          class="no-links"
+          v-if="link.tipo == 'ext'"
+          :href="link.link"
+          target="_blank"
+          >{{ link.nombre }}</a
+        >
+        <router-link class="no-links" v-else :to="link.link">{{
+          link.nombre
+        }}</router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -42,8 +53,9 @@ export default defineComponent({
   color: #104050;
   box-shadow: 2px 2px 5px grey;
 }
-.navbar ul li a {
+.no-links {
   text-decoration: none;
+  color: #104050;
 }
 
 .headerboxes {

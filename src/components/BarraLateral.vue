@@ -22,23 +22,35 @@ export default defineComponent({
         {
           titulo: "Secciones",
           links: [
-            "Inicio",
-            "Software Libre",
-            "¿Que es GNUno?",
-            "Artículos",
-            "Proyectos",
-            "Eventos",
-            "Chat",
-            "Contacto"
+            { tipo: "int", nombre: "Inicio", link: "/" },
+            { tipo: "int", nombre: "Software Libre", link: "/softwarelibre" },
+            { tipo: "int", nombre: "¿Que es GNUno?", link: "/gnuno" },
+            { tipo: "int", nombre: "Artículos", link: "/articulos" },
+            { tipo: "int", nombre: "Proyectos", link: "/proyectos" },
+            { tipo: "int", nombre: "Eventos", link: "/eventos" },
+            { tipo: "int", nombre: "Chat", link: "/chat" },
+            { tipo: "int", nombre: "Contacto", link: "/contacto" }
           ]
         },
         {
           titulo: "Links",
           links: [
-            "Universidad Nacional del Oeste",
-            "ForoUNO",
-            "Proyecto GNU",
-            "Free Software Foundation"
+            {
+              tipo: "ext",
+              nombre: "Universidad Nacional del Oeste",
+              link: "http://uno.edu.ar"
+            },
+            { tipo: "ext", nombre: "ForoUNO", link: "http://forouno.org" },
+            {
+              tipo: "ext",
+              nombre: "Proyecto GNU",
+              link: "https://www.gnu.org/gnu/thegnuproject.en.html"
+            },
+            {
+              tipo: "ext",
+              nombre: "Free Software Foundation",
+              link: "https://www.fsf.org"
+            }
           ]
         }
       ]
