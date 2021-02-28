@@ -13,7 +13,8 @@ export default defineComponent({
 <style scoped>
 #contenedor {
   display: inline-block;
-  min-width: 80%;
+  max-width: 80%;
+  margin: auto 0px;
   margin-left: 1%;
 }
 </style>
