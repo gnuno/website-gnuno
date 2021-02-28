@@ -1,6 +1,7 @@
 <template>
   <div class="barra_lateral">
     <div class="navbar">
+      <h3>Secciones</h3>
       <ul>
         <li>Inicio</li>
         <li>Software Libre</li>
@@ -10,6 +11,16 @@
         <li>Eventos</li>
         <li>Chat</li>
         <li>Contacto</li>
+      </ul>
+    </div>
+
+    <div class="navbar">
+      <h3>Links</h3>
+      <ul>
+        <li>Universidad Nacional del Oeste</li>
+        <li>ForoUNO</li>
+        <li>Proyecto GNU</li>
+        <li>Free Software Foundation</li>
       </ul>
     </div>
   </div>
@@ -29,6 +40,7 @@
   border-radius: 15px;
   box-shadow: 2px 2px 5px grey;
   text-align: center;
+  margin-bottom: 10%;
 }
 .navbar ul {
   list-style: none;
