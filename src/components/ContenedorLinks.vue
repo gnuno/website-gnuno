@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <h3>{{ titulo }}</h3>
+    <div class="headerboxes">{{ titulo }}</div>
     <ul>
       <li v-for="link in links" v-bind:key="link">{{ link }}</li>
     </ul>
@@ -44,5 +44,20 @@ export default defineComponent({
 }
 .navbar ul li a {
   text-decoration: none;
+}
+
+.headerboxes {
+  font-size: 1.3rem;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+  font-style: italic;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #104050;
+  color: #6c929f;
+  width: 100%;
+  border: 1px solid #457585;
 }
 </style>
