@@ -24,7 +24,7 @@ export default defineComponent({
           links: [
             { tipo: "int", nombre: "Inicio", link: "/" },
             { tipo: "int", nombre: "Software Libre", link: "/softwarelibre" },
-            { tipo: "int", nombre: "¿Que es GNUno?", link: "/gnuno" },
+            { tipo: "int", nombre: "¿Que es GNUno?", link: "/nosotros" },
             { tipo: "int", nombre: "Artículos", link: "/articulos" },
             { tipo: "int", nombre: "Proyectos", link: "/proyectos" },
             { tipo: "int", nombre: "Eventos", link: "/eventos" },

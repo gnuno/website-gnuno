@@ -11,6 +11,11 @@ const routes = [
     name: "Software Libre",
     component: () =>
       import(/* webpackChunkName: "Home" */ "../views/SoftwareLibre")
+  },
+  {
+    path: "/nosotros",
+    name: "Nosotros",
+    component: () => import(/* webpackChunkName: "Home" */ "../views/Nosotros")
   }
 ];
 
