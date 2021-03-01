@@ -23,11 +23,4 @@ export default defineComponent({
 .footer-nota {
   text-align: right;
 }
-.nota {
-  border: 2px solid #457585;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px grey;
-}
 </style>
