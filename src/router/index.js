@@ -22,6 +22,26 @@ const routes = [
     path: "/chat",
     name: "Chat",
     component: () => import(/* webpackChunkName: "Chat" */ "../views/Chat")
+  },
+  {
+    path: "/proyectos",
+    name: "Proyectos",
+    component: () => import(/* webpackChunkName: "Proyectos" */ "../views/Home")
+  },
+  {
+    path: "/eventos",
+    name: "Eventos",
+    component: () => import(/* webpackChunkName: "Eventos" */ "../views/Home")
+  },
+  {
+    path: "/articulos",
+    name: "Articulos",
+    component: () => import(/* webpackChunkName: "Articulos" */ "../views/Home")
+  },
+  {
+    path: "/contacto",
+    name: "Contacto",
+    component: () => import(/* webpackChunkName: "Contacto" */ "../views/Home")
   }
 ];
 
