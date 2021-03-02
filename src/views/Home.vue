@@ -1,4 +1,5 @@
 <template>
+  <h1>[[ LUG: Universidad Nacional del Oeste ]]</h1>
   <div v-for="nota in notas" v-bind:key="nota" class="nota">
     <h2>{{ nota.titulo }}</h2>
     <p>{{ nota.cuerpo }}</p>
