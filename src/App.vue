@@ -16,7 +16,11 @@ import ContenedorPrincipal from "@/components/ContenedorPrincipal";
 export default defineComponent({
   name: "app",
   components: { ContenedorPrincipal, BarraLateral, Footer, Header },
-  setup() {}
+  watch: {
+    $route(to) {
+      document.title = to.meta.title || "GNUno";
+    }
+  }
 });
 </script>
 <style>
