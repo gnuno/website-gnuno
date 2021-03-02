@@ -32,7 +32,8 @@ const routes = [
   {
     path: "/eventos",
     name: "Eventos",
-    component: () => import(/* webpackChunkName: "Eventos" */ "../views/Home")
+    component: () =>
+      import(/* webpackChunkName: "Eventos" */ "../views/Eventos")
   },
   {
     path: "/articulos",
