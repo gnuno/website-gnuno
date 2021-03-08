@@ -6,15 +6,14 @@
   </div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import proyectos from "@/mock/proyectos";
+import { defineComponent, ref } from "vue";
+import entradas from "@/mock/entradas";
 
 export default defineComponent({
   name: "Home",
-  data() {
-    return {
-      proyectos: proyectos
-    };
+  setup() {
+    const proyectos = ref(entradas.filter(entrada => entrada.tipo === 4));
+    return { proyectos };
   }
 });
 </script>

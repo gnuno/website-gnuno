@@ -8,15 +8,14 @@
   </div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import notas from "@/mock/notas";
+import { defineComponent, ref } from "vue";
+import entradas from "@/mock/entradas";
 
 export default defineComponent({
   name: "Home",
-  data() {
-    return {
-      notas: notas
-    };
+  setup() {
+    const notas = ref(entradas.filter(entrada => entrada.tipo === 1));
+    return { notas };
   }
 });
 </script>

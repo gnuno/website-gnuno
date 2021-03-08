@@ -10,15 +10,14 @@
   </div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import eventos from "@/mock/eventos";
+import { defineComponent, ref } from "vue";
+import entradas from "@/mock/entradas";
 
 export default defineComponent({
   name: "Home",
-  data() {
-    return {
-      eventos: eventos
-    };
+  setup() {
+    const eventos = ref(entradas.filter(entrada => entrada.tipo === 3));
+    return { eventos };
   }
 });
 </script>
